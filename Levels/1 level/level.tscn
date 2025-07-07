@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://devi31mtjoh8f"]
+
+[ext_resource type="PackedScene" uid="uid://bc8gshyfvmnbr" path="res://Levels/1 level/map.tscn" id="1_rp3n0"]
+[ext_resource type="PackedScene" uid="uid://dssegwi3bjdqo" path="res://Character/Character.tscn" id="2_4tjbr"]
+
+[node name="level" type="Node2D"]
+texture_filter = 1
+
+[node name="map" parent="." instance=ExtResource("1_rp3n0")]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_4tjbr")]
+position = Vector2(169, 1)
+collision_layer = 8
+collision_mask = 7
